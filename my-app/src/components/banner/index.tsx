@@ -7,7 +7,7 @@ export default function Banner() {
         <PagerView style={{ flex:1 }} initialPage={0} pageMargin={14}>
             <Pressable 
                 className='w-full h-36 md:h-60 rounded-2xl' 
-                key='1'
+                key='banner-1'
                 onPress={() => console.log('clicou')}
             >
                 <Image
@@ -18,7 +18,7 @@ export default function Banner() {
 
             <Pressable 
                 className='w-full h-36 md:h-60 rounded-2xl' 
-                key='1'
+                key='banner-2'
                 onPress={() => console.log('clicou 2')}
             >
                 <Image

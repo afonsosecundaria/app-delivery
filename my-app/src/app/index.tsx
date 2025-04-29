@@ -1,6 +1,6 @@
 import { Text, View, ScrollView } from "react-native";
-import Header from "../components/header";
 import  Constants  from "expo-constants"
+import Header from "../components/header";
 import Banner from "../components/banner";
 import Search from "../components/search";
 import Section from "../components/section";
@@ -19,7 +19,18 @@ export default function Index() {
         <Banner/>
         <Search/>
       </View>       
-      <Section/> 
+      <Section
+        name="Comidas em alta"
+        label="Veja mais"
+        size="text-2xl"
+        action={() => console.log('section1')}
+      /> 
+      <Section
+        name="Lojas em alta"
+        label="Veja mais"
+        size="text-xl"
+        action={() => console.log('section2')}
+      /> 
     </ScrollView>
 
   );
